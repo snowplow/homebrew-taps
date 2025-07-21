@@ -5,20 +5,20 @@
 class SnowplowCli < Formula
   desc "Work with Snowplow from the command line"
   homepage "https://github.com/snowplow/snowplow-cli"
-  version "0.1.3"
+  version "0.1.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/snowplow/snowplow-cli/releases/download/v0.1.3/snowplow-cli_darwin_x86_64"
-      sha256 "fe23bfbe340cf7cd7f870f778e5ff0d1eadd380207e8c21b9ed833d66e7790f5"
+      url "https://github.com/snowplow/snowplow-cli/releases/download/v0.1.4/snowplow-cli_darwin_x86_64"
+      sha256 "99c69bbf9e777ca53739fd61f629387e479f16b89170a9ec13f21014641edbe3"
 
       def install
         bin.install "snowplow-cli_darwin_x86_64" => "snowplow-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/snowplow/snowplow-cli/releases/download/v0.1.3/snowplow-cli_darwin_arm64"
-      sha256 "bbe8b71218ae64c348447ef818627d15c5e8bc4862fd344c55b154fa51ae3157"
+      url "https://github.com/snowplow/snowplow-cli/releases/download/v0.1.4/snowplow-cli_darwin_arm64"
+      sha256 "2073df18a229049b79713ece1048038c73c1fc2499a105ccfebd88b038b29ab1"
 
       def install
         bin.install "snowplow-cli_darwin_arm64" => "snowplow-cli"
@@ -28,15 +28,15 @@ class SnowplowCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/snowplow/snowplow-cli/releases/download/v0.1.3/snowplow-cli_linux_x86_64"
-      sha256 "cf359740616a88038bfe363e589e1a53db97941b5d22abc68dc819262b66c2b7"
+      url "https://github.com/snowplow/snowplow-cli/releases/download/v0.1.4/snowplow-cli_linux_x86_64"
+      sha256 "ecc3f0544a2b1f9e495af19d2a3851ac16859d284c4473777076c15ef1e5314e"
       def install
         bin.install "snowplow-cli_linux_x86_64" => "snowplow-cli"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/snowplow/snowplow-cli/releases/download/v0.1.3/snowplow-cli_linux_arm64"
-      sha256 "5311d54f226ebecf1ceed4fdcebc8e320b3554c4c8b9c224dcea906acf7622cc"
+      url "https://github.com/snowplow/snowplow-cli/releases/download/v0.1.4/snowplow-cli_linux_arm64"
+      sha256 "667201de8b6495bbc2301e7441f0fa0f3ca7d21c0fd1e247eda3fad74fb93655"
       def install
         bin.install "snowplow-cli_linux_arm64" => "snowplow-cli"
       end
